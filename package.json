@@ -1,0 +1,27 @@
+{
+  "name": "@alchemycodelab/create-app",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alchemycodelab/create-alchemy-react"
+  },
+  "bin": {
+    "create-alchemy-app": "./index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^5.0.0",
+    "inquirer": "^7.1.0",
+    "mustache": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
