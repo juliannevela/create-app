@@ -12,5 +12,10 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '13.x'
+    - uses: alchemycodelab/jest-reporter-action@master
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm ci
     - run: npm test
+      env:
+        CI: true

@@ -1,13 +1,13 @@
 {
   "name": "@alchemycodelab/create-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/alchemycodelab/create-alchemy-react"
   },
   "bin": {
-    "create-alchemy-app": "./index.js"
+    "create-app": "./index.js"
   },
   "main": "index.js",
   "scripts": {
