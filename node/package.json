@@ -15,8 +15,7 @@
     "globalTeardown": "alchemy-jest-slack-reporter/teardown.js",
     "reporters": [
       "default",
-      "alchemy-jest-slack-reporter",
-      "jest-github-reporter"
+      "alchemy-jest-slack-reporter"
     ]
   },
   "keywords": [],
