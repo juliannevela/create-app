@@ -12,12 +12,7 @@
   "jest": {
     "testEnvironment": "node",
     "globalSetup": "alchemy-jest-slack-reporter/setup.js",
-    "globalTeardown": "alchemy-jest-slack-reporter/teardown.js",
-    "reporters": [
-      "default",
-      "alchemy-jest-slack-reporter",
-      "jest-github-reporter"
-    ]
+    "globalTeardown": "alchemy-jest-slack-reporter/teardown.js"
   },
   "keywords": [],
   "author": "",

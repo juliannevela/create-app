@@ -25,7 +25,7 @@ async function init(config) {
 }
 
 async function getConfig(program) {
-  return program.type && program.applicationFolder
+  return program.type && program.args[0]
     ? {
       type: program.type,
       applicationFolder: program.args[0],
