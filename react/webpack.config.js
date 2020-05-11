@@ -24,6 +24,9 @@ module.exports = {
       { from: 'public' },
     ])
   ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
