@@ -5,6 +5,6 @@ const app = require('../lib/app');
 
 describe('{{appName}} routes', () => {
   beforeEach(() => {
-    return pool.query(fs.readFileSync('./sql/setup.sql'))
+    return pool.query(fs.readFileSync('./sql/setup.sql', 'utf-8'))
   });
 });
