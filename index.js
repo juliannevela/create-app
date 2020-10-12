@@ -2,14 +2,14 @@
 
 const { program } = require('commander');
 const { prompt } = require('inquirer');
-const nodeSetup = require('./lib/nodeSetup');
+const expressSqlSetup = require('./lib/expressSqlSetup');
 const reactSetup = require('./lib/reactSetup');
-const basicSetup = require('./lib/basicSetup');
+const onlySqlSetup = require('./lib/onlySqlSetup');
 
 const scripts = {
-  node: nodeSetup,
-  react: reactSetup,
-  basic: basicSetup
+  expressSqlSetup,
+  reactSetup,
+  onlySqlSetup
 };
 
 program
@@ -37,9 +37,9 @@ async function getConfig(program) {
         name: 'type',
         message: 'Application Type',
         choices: [
-          'node',
-          'react',
-          'basic'
+          { name: 'express sql', value: 'expressSqlSetup' },
+          { name: 'react', value: 'reactSetup' },
+          { name: 'sql only', value: 'onlySqlSetup' }
         ]
       },
       {
