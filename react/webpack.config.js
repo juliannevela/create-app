@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
@@ -8,6 +10,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.[hash].js',
+    path: path.resolve(__dirname, './dist'),
     publicPath: '/'
   },
   devServer: {
