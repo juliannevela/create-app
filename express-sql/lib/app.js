@@ -1,9 +1,16 @@
-const express = require('express');
+import express from 'express';
+import notFoundMiddleware from './middleware/not-found.js';
+import errorMiddleware from './middleware/error.js';
+
 const app = express();
 
 app.use(express.json());
 
-app.use(require('./middleware/not-found'));
-app.use(require('./middleware/error'));
+if (app) {
+  console.log('hi');
+}
 
-module.exports = app;
+app.use(notFoundMiddleware);
+app.use(errorMiddleware);
+
+export default app;

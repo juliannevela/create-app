@@ -1,9 +1,9 @@
-const pool = require('../lib/utils/pool');
-const setup = require('../data/setup');
-const request = require('supertest');
-const app = require('../lib/app');
+import pool from '../lib/utils/pool.js';
+import setup from '../data/setup.js';
+import request from 'supertest';
+import app from '../lib/app.js';
 
-describe('{{appName}} routes', () => {
+describe('demo routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
