@@ -3,11 +3,7 @@
     "ecmaVersion": 12,
     "sourceType": "module",
     "requireConfigFile": false,
-    "babelOptions": {
-      "plugins": ["@babel/plugin-syntax-class-properties"]
-    }
   },
-  "parser": "@babel/eslint-parser",
   "env": {
     "es6": true,
     "node": true,
