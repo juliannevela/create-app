@@ -1,1 +1,2 @@
-global.fetch = require('node-fetch');
+global.fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
