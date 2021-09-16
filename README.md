@@ -4,7 +4,7 @@ This is the source code for the Alchemy Code Lab Career Track bootstrap script.
 
 ## Usage
 
-`npm init @alchemycodelab/app@latest`.
+`npm init @alchemycodelab/app@latest`
 
 ## Making Changes to the Bootstrap
 
