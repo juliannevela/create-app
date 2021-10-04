@@ -1,12 +1,10 @@
-import express from 'express';
-import notFoundMiddleware from './middleware/not-found.js';
-import errorMiddleware from './middleware/error.js';
+const express = require('express');
 
 const app = express();
 
 app.use(express.json());
 
-app.use(notFoundMiddleware);
-app.use(errorMiddleware);
+app.use(require('./middleware/not-found.js'));
+app.use(require('./middleware/error.js'));
 
-export default app;
+module.exports = app;
