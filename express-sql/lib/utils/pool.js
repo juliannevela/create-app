@@ -8,4 +8,4 @@ const pool = new Pool({
 // eslint-disable-next-line no-console
 pool.on('connect', () => console.log('Postgres connected'));
 
-export default pool;
+module.exports = pool;
